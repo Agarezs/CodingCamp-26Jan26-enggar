@@ -1,6 +1,6 @@
-// ==========================================
+
 // DOM Content Loaded Event
-// ==========================================
+
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all functions
     initMobileMenu();
@@ -11,9 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initAnimations();
 });
 
-// ==========================================
 // Mobile Menu Toggle
-// ==========================================
+
 function initMobileMenu() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
@@ -76,9 +75,9 @@ function initGreeting() {
     }
 }
 
-// ==========================================
+
 // Current Time Display
-// ==========================================
+
 function initCurrentTime() {
     const timeElement = document.getElementById('currentTime');
     
@@ -105,9 +104,9 @@ function initCurrentTime() {
     }
 }
 
-// ==========================================
+
 // Message Form Validation and Submission
-// ==========================================
+
 function initMessageForm() {
     const form = document.getElementById('messageForm');
     const outputContent = document.getElementById('outputContent');
@@ -139,9 +138,9 @@ function initMessageForm() {
     }
 }
 
-// ==========================================
+
 // Form Validation
-// ==========================================
+
 function validateForm(nama, tanggalLahir, pesan) {
     // Validate name
     if (nama === '') {
@@ -438,15 +437,9 @@ window.addEventListener('scroll', function() {
     });
 });
 
-// ==========================================
-// Console Welcome Message
-// ==========================================
 console.log('%c Welcome to RevoU Training Website! ', 'background: #FFD700; color: #333; font-size: 20px; font-weight: bold; padding: 10px;');
 console.log('%c Made with ❤️ for learning purposes ', 'background: #333; color: #FFD700; font-size: 14px; padding: 5px;');
 
-// ==========================================
-// Performance Monitoring (Optional)
-// ==========================================
 window.addEventListener('load', function() {
     const loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
     console.log(`%c Page loaded in ${loadTime}ms `, 'background: #4ECDC4; color: white; padding: 5px; border-radius: 3px;');
