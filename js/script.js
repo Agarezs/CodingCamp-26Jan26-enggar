@@ -437,7 +437,7 @@ window.addEventListener('scroll', function() {
     });
 });
 
-console.log('%c Welcome to RevoU Training Website! ', 'background: #FFD700; color: #333; font-size: 20px; font-weight: bold; padding: 10px;');
+console.log('%c Welcome to Enggar Website! ', 'background: #FFD700; color: #333; font-size: 20px; font-weight: bold; padding: 10px;');
 console.log('%c Made with ❤️ for learning purposes ', 'background: #333; color: #FFD700; font-size: 14px; padding: 5px;');
 
 window.addEventListener('load', function() {
