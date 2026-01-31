@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - RevoU Training Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 60 60" width="50" height="50">
+                        <circle cx="30" cy="30" r="28" fill="#FFD700" stroke="#333" stroke-width="2"/>
+                        <text x="30" y="22" font-size="16" text-anchor="middle" fill="#333" font-weight="bold">R</text>
+                        <text x="30" y="38" font-size="16" text-anchor="middle" fill="#333" font-weight="bold">VC</text>
+                    </svg>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="profile.html" class="nav-link">Our Profile</a></li>
+                <li class="nav-item"><a href="index.html#portofolio" class="nav-link">Portofolio</a></li>
+                <li class="nav-item"><a href="index.html#message" class="nav-link">Message Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span id="greeting">Hi Harfi</span>, Welcome To Website
+            </h1>
+            <p class="hero-subtitle">Ini adalah website latihan pertama</p>
+            <div class="hero-placeholder">
+                <span class="placeholder-text">1366×578</span>
+            </div>
+        </div>
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Headquarter Section -->
+    <section id="portofolio" class="headquarter">
+        <div class="container">
+            <h2 class="section-title">Our Headquarter</h2>
+            <div class="headquarter-grid">
+                <div class="headquarter-card">
+                    <div class="headquarter-icon">
+                        <div class="location-circle"></div>
+                    </div>
+                    <h3 class="headquarter-name">Jakarta</h3>
+                </div>
+                <div class="headquarter-card">
+                    <div class="headquarter-icon">
+                        <div class="location-circle"></div>
+                    </div>
+                    <h3 class="headquarter-name">Bandung</h3>
+                </div>
+                <div class="headquarter-card">
+                    <div class="headquarter-icon">
+                        <div class="location-circle"></div>
+                    </div>
+                    <h3 class="headquarter-name">Surabaya</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Us Section -->
+    <section id="message" class="message-section">
+        <div class="container">
+            <h2 class="section-title">Message Us</h2>
+            <div class="message-grid">
+                <div class="form-container">
+                    <form id="messageForm" class="message-form">
+                        <div class="form-group">
+                            <label for="nama">Nama</label>
+                            <input type="text" id="nama" name="nama" placeholder="Nama" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tanggalLahir">Tanggal Lahir</label>
+                            <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Jenis Kelamin</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="jenisKelamin" value="Laki-Laki" checked>
+                                    <span>Laki-Laki</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="jenisKelamin" value="Perempuan">
+                                    <span>Perempuan</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <textarea id="pesan" name="pesan" rows="5" placeholder="Pesan" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+                <div class="output-container">
+                    <div id="outputBox" class="output-box">
+                        <div class="output-header">Current time: <span id="currentTime"></span></div>
+                        <div id="outputContent" class="output-content">
+                            <p>Fill the form and submit to see the result here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Created By RevoU</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
